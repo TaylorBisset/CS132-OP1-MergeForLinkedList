@@ -1,4 +1,15 @@
-// main.cpp 
+// main.cpp
+
+/*
+Name:           Taylor Bisset
+Section:        A
+Program Name:   CS132-OP1-MergeForLinkedList
+
+Description:    
+
+Repo:           https://github.com/TaylorBisset/CS132-OP1-MergeForLinkedList
+
+*/
 
 #include <iostream>
 
