@@ -23,19 +23,21 @@ int main()
 {
 	LkList list, list2;
 
-	list.insert( { 0, 10, 20, 30, 40} );
-	list2.insert( { 1, 2, 3, 5, 11, 12, 13, 26, 27, 28, 29, 34, 35, 36, 37, 44, 45, 46, 47} );
-	
-	list.merge(list2);
-	
-	cout << "Merge #1 (source overlaps destination): \n" << list << endl;
-	cout << "List size after merge: " << list.size() << endl;
-	cout << endl << endl;
-	
-	list.clear();
-	list2.clear();
 	//------------------------
 
+	//list.insert( { 0, 10, 20, 30, 40} );
+	//list2.insert( { 1, 2, 3, 5, 11, 12, 13, 26, 27, 28, 29, 34, 35, 36, 37, 44, 45, 46, 47} );
+	//
+	//list.merge(list2);
+	//
+	//cout << "Merge #1 (source overlaps destination): \n" << list << endl;
+	//cout << "List size after merge: " << list.size() << endl;
+	//cout << endl << endl;
+	//
+	//list.clear();
+	//list2.clear();
+
+	//------------------------
 
 	//list.merge(list2);
 	//
@@ -45,6 +47,7 @@ int main()
 
 	//list.clear();
 	//list2.clear();
+	
 	//------------------------
 
 	//list2.insert( { 0, 10, 20, 30, 40 } );
@@ -57,6 +60,7 @@ int main()
 
 	//list.clear();
 	//list2.clear();
+	
 	//------------------------
 
 	//
@@ -71,8 +75,8 @@ int main()
 	//
 	//list.clear();
 	//list2.clear();
+	
 	//------------------------
-
 
 	//list.insert( { 40, 47, 54, 61, 68 } );
 	//
@@ -87,7 +91,7 @@ int main()
 	//
 	//list.clear();
 	//list2.clear();
-	//
+	
 	//------------------------
 
 	//list.insert( { 10, 17, 21, 28 } );
@@ -102,6 +106,7 @@ int main()
 	//
 	//list.clear();
 	//list2.clear();
+	
 	//------------------------
 
 	//list.insert( { 0, 9, 18, 27 } );
@@ -117,6 +122,7 @@ int main()
 	//
 	//list.clear();
 	//list2.clear();
+	
 	//------------------------
 
 	//list.insert( { -6, 2, 10, 18, 26, 34 } );
@@ -132,9 +138,7 @@ int main()
 	//list.clear();
 	//list2.clear();
 
-
 	//------------------------
-
 
 	system("pause");
 	return 0;
