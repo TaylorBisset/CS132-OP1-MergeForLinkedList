@@ -3,6 +3,7 @@
 #ifndef LKLIST_H
 #define LKLIST_H
 #include <string>
+// #include "stdafx.h"
 
 using namespace std;
 

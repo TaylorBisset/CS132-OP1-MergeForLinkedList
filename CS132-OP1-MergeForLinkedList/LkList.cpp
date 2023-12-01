@@ -1,18 +1,42 @@
 // LkList.cpp
 
 #include <iostream>
-#include "stdafx.h"
 #include "LkList.h"
+// #include "stdafx.h"
 
 using namespace std;
 
 void LkList::merge(LkList& src)
 {
+	/*
+	
+	if (list1.at(0) < list2.at(0))
+	{
+		sift through list2 until list1.at(i) == list2.at(i);
+		use insert for temp list? 
+		merge those numbers into list1 after list1.at(0); maybe using another insert?
 
-	// this is what you need to write.....
 
+		Check if either list is empty
+		If current list is empty, copy the source list
+		If source list is empty, do nothing
+			early terminate
+
+		Initialize iterators for both lists
+			head and src.head
+
+		Handle the first element
+		Iterate through both lists
+		If the next element in the current list is larger, insert the source element before it
+			Move to the next element in the current list
+
+		If there are remaining elements in the source list, append them to the current list
+
+		Update the source list
+	}
+	
+	*/
 }  // end of merge function
-
 
 LkList::LkList()
 {
@@ -55,7 +79,6 @@ void LkList::insert(const initializer_list<int>& il)
 		insert(ele);
 	}
 }
-
 
 void LkList::clear()
 {
