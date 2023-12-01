@@ -21,23 +21,13 @@ void LkList::merge(LkList& src)
 		// Source list is empty, do nothing
 		return;
 	}
+	
+	Node* curr = head;
+	Node* srcCurr = src.head;
+
+
 	/*
 	
-	if (list1.at(0) < list2.at(0))
-	{
-		sift through list2 until list1.at(i) == list2.at(i);
-		use insert for temp list? 
-		merge those numbers into list1 after list1.at(0); maybe using another insert?
-
-
-		Check if either list is empty
-		If current list is empty, copy the source list
-		If source list is empty, do nothing
-			early terminate
-
-		Initialize iterators for both lists
-			head and src.head
-
 		Handle the first element
 		Iterate through both lists
 		If the next element in the current list is larger, insert the source element before it
