@@ -14,11 +14,13 @@ class LkList
 	public:
 		Node()
 		{
+			data = 0;
 			next = prev = nullptr;
 		}
 		Node(int num)
 		{
-			data = num; next = prev = nullptr;
+			data = num; 
+			next = prev = nullptr;
 		}
 
 		int data;
