@@ -13,7 +13,6 @@ Repo:           https://github.com/TaylorBisset/CS132-OP1-MergeForLinkedList
 
 #include <iostream>
 #include <iomanip>
-#include <string>
 
 #include "LkList.h"
 #include "stdafx.h"
