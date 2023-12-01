@@ -15,7 +15,7 @@ Repo:           https://github.com/TaylorBisset/CS132-OP1-MergeForLinkedList
 #include <iomanip>
 
 #include "LkList.h"
-#include "stdafx.h"
+// #include "stdafx.h"
 
 using namespace std;
 
