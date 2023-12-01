@@ -39,14 +39,14 @@ int main()
 
 	//------------------------
 
-	//list.merge(list2);
-	//
-	//cout << "Merge #2 (empty merge): \n" << list << endl;
-	//cout << "List size after merge: " << list.size() << endl;
-	//cout << endl << endl;
+	list.merge(list2);
+	
+	cout << "Merge #2 (empty merge): \n" << list << endl;
+	cout << "List size after merge: " << list.size() << endl;
+	cout << endl << endl;
 
-	//list.clear();
-	//list2.clear();
+	list.clear();
+	list2.clear();
 	
 	//------------------------
 
@@ -150,6 +150,11 @@ OUTPUT:
 Merge #1 (source overlaps destination):
 0  1  2  3  5  10  11  12  13  20  26  27  28  29  30  34  35  36  37  40  44  45  46  47
 List size after merge: 5
+
+Merge #2 (empty merge):
+
+List size after merge: 0
+
 
 */
 
