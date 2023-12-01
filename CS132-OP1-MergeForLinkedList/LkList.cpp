@@ -25,6 +25,16 @@ void LkList::merge(LkList& src)
 	Node* curr = head;
 	Node* srcCurr = src.head;
 
+	// First element
+	if (srcCurr->data < curr->data) 
+	{
+		// Insert the source element before the current element
+		src.head = srcCurr->next;
+		srcCurr->next = curr;
+		head = srcCurr;
+		curr = srcCurr;
+		srcCurr = src.head;
+	}
 
 	/*
 	
