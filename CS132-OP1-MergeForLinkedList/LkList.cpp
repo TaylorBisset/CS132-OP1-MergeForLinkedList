@@ -8,6 +8,19 @@ using namespace std;
 
 void LkList::merge(LkList& src)
 {
+	if (head == nullptr) 
+	{
+		// If current list is empty, copy the source list
+		head = src.head;
+		tail = src.tail;
+		src.head = src.tail = nullptr;  // Clear the source list
+		return;
+	}
+	if (src.head == nullptr) 
+	{
+		// Source list is empty, do nothing
+		return;
+	}
 	/*
 	
 	if (list1.at(0) < list2.at(0))
