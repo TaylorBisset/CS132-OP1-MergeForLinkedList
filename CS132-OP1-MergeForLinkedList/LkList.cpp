@@ -8,6 +8,7 @@ using namespace std;
 
 void LkList::merge(LkList& src)
 {
+	// early termination
 	if (head == nullptr) 
 	{
 		// If current list is empty, copy the source list
@@ -16,12 +17,13 @@ void LkList::merge(LkList& src)
 		src.head = src.tail = nullptr;  // Clear the source list
 		return;
 	}
+	// early termination
 	if (src.head == nullptr) 
 	{
 		// Source list is empty, do nothing
 		return;
 	}
-	
+	// initialize lists
 	Node* curr = head;
 	Node* srcCurr = src.head;
 
@@ -35,11 +37,11 @@ void LkList::merge(LkList& src)
 		curr = srcCurr;
 		srcCurr = src.head;
 	}
-
 	// Iterate through lists
 	while (curr->next != nullptr && srcCurr != nullptr)
 	{
-		if (srcCurr->data < curr->next->data) // check if source is less than next var in current list
+		// check if source is less than next var in current list
+		if (srcCurr->data < curr->next->data) 
 		{
 			// insert source before next in current list
 			src.head = srcCurr->next;
@@ -54,15 +56,14 @@ void LkList::merge(LkList& src)
 			curr = curr->next;
 		}
 	}
-
 	// Handle remaining elements
 	if (srcCurr != nullptr)
 	{
 		curr->next = srcCurr;
 		tail = src.tail;
-		// clear source list
-		src.head = src.tail = nullptr;
 	}
+	// clear source list
+	src.head = src.tail = nullptr;
 }  // end of merge function
 
 LkList::LkList()
@@ -113,19 +114,17 @@ void LkList::insert(const initializer_list<int>& il)
 
 void LkList::clear()
 {
-	if (count == 0)
+	Node* current = head;			// Set temp pointer `current`
+
+	while (current != nullptr)		// Iterate through current list 
 	{
-		return;
+		Node* next = current->next;	// Set temp pointer `next`
+		delete current;				// Delete current node to free memory
+		current = next;				// Move to next node
 	}
 
-	while (tail != head)
-	{
-		tail = tail->prev;
-		delete tail->next;
-	}
-	delete head;
-	head = tail = nullptr;
-	count = 0;
+	head = tail = it = nullptr;		// Update all to nullptr after deleting nodes
+	count = 0;						// Reset count in list to 0
 }
 
 void LkList::resetIterator()
