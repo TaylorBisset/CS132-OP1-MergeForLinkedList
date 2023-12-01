@@ -47,6 +47,11 @@ void LkList::merge(LkList& src)
 			curr = srcCurr;
 			srcCurr = src.head;
 		}
+		else
+		{
+			// Move to next elements
+			curr = curr->next;
+		}
 	}
 
 	/*
