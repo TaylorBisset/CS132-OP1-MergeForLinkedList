@@ -60,13 +60,9 @@ void LkList::merge(LkList& src)
 	{
 		curr->next = srcCurr;
 		tail = src.tail;
+		// clear source list
+		src.head = src.tail = nullptr;
 	}
-
-	/*
-		If there are remaining elements in the source list, append them to the current list
-
-		Update the source list
-	*/
 }  // end of merge function
 
 LkList::LkList()
