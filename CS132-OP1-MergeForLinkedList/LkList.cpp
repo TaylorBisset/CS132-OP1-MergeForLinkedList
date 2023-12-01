@@ -36,6 +36,19 @@ void LkList::merge(LkList& src)
 		srcCurr = src.head;
 	}
 
+	while (curr->next != nullptr && srcCurr != nullptr)
+	{
+		if (srcCurr->data < curr->next->data) // check if source is less than next var in current list
+		{
+			// insert source before next in current list
+			src.head = srcCurr->next;
+			srcCurr->next = curr->next;
+			curr->next = srcCurr;
+			curr = srcCurr;
+			srcCurr = src.head;
+		}
+	}
+
 	/*
 	
 		Handle the first element
