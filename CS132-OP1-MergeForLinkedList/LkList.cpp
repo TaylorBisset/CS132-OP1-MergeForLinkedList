@@ -36,6 +36,7 @@ void LkList::merge(LkList& src)
 		srcCurr = src.head;
 	}
 
+	// Iterate through lists
 	while (curr->next != nullptr && srcCurr != nullptr)
 	{
 		if (srcCurr->data < curr->next->data) // check if source is less than next var in current list
@@ -54,18 +55,17 @@ void LkList::merge(LkList& src)
 		}
 	}
 
-	/*
-	
-		Handle the first element
-		Iterate through both lists
-		If the next element in the current list is larger, insert the source element before it
-			Move to the next element in the current list
+	// Handle remaining elements
+	if (srcCurr != nullptr)
+	{
+		curr->next = srcCurr;
+		tail = src.tail;
+	}
 
+	/*
 		If there are remaining elements in the source list, append them to the current list
 
 		Update the source list
-	}
-	
 	*/
 }  // end of merge function
 
