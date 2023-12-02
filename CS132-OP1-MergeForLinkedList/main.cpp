@@ -77,19 +77,19 @@ int main()
 	
 	//------------------------
 
-	//list.insert( { 40, 47, 54, 61, 68 } );
-	//
-	//list2.insert( { 0, 3, 6, 9, 12, 15, 18 } );
+	list.insert( { 40, 47, 54, 61, 68 } );
+	
+	list2.insert( { 0, 3, 6, 9, 12, 15, 18 } );
 
 
-	//list.merge(list2);
+	list.merge(list2);
 
-	//cout << "Merge #5(source before destination): \n" << list << endl;
-	//cout << "List size after merge: " << list.size() << endl;
-	//cout << endl << endl;
-	//
-	//list.clear();
-	//list2.clear();
+	cout << "Merge #5 (source before destination): \n" << list << endl;
+	cout << "List size after merge: " << list.size() << endl;
+	cout << endl << endl;
+	
+	list.clear();
+	list2.clear();
 	
 	//------------------------
 
@@ -164,6 +164,11 @@ List size after merge: 0
 Merge #4 (from an empty list):
 0  5  10  15  20  25  30  35  40
 List size after merge: 9
+
+
+Merge #5 (source before destination):
+0  3  6  9  12  15  18  40  47  54  61  68
+List size after merge: 5
 
 
 Press any key to continue . . .
