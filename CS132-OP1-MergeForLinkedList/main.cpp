@@ -108,19 +108,19 @@ int main()
 	
 	//------------------------
 
-	//list.insert( { 0, 9, 18, 27 } );
-	//
-	//list2.insert( { -6, -4, -2, 0, 2, 4, 6, 8, 10, 12, 16, 
-	//                 18, 20, 22, 24, 26, 28, 30, 32, 34 } );	
-	//
-	//list.merge( list2 );
-	//
-	//cout << "Merge #7 (source overlaps destination):\n" << list << endl;
-	//cout << "List size after merge: " << list.size() << endl;
-	//cout << endl << endl;
-	//
-	//list.clear();
-	//list2.clear();
+	list.insert( { 0, 9, 18, 27 } );
+	
+	list2.insert( { -6, -4, -2, 0, 2, 4, 6, 8, 10, 12, 16, 
+	                 18, 20, 22, 24, 26, 28, 30, 32, 34 } );	
+	
+	list.merge( list2 );
+	
+	cout << "Merge #7 (source overlaps destination):\n" << list << endl;
+	cout << "List size after merge: " << list.size() << endl;
+	cout << endl << endl;
+	
+	list.clear();
+	list2.clear();
 	
 	//------------------------
 
@@ -173,6 +173,11 @@ List size after merge: 5
 
 Merge #6 (source after destination):
 10  17  21  28  50  53  56  59  62  65
+List size after merge: 4
+
+
+Merge #7 (source overlaps destination):
+-6  -4  -2  0  0  2  4  6  8  9  10  12  16  18  18  20  22  24  26  27  28  30  32  34
 List size after merge: 4
 
 
