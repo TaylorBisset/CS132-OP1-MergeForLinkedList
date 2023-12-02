@@ -93,18 +93,18 @@ int main()
 	
 	//------------------------
 
-	//list.insert( { 10, 17, 21, 28 } );
-	//
-	//list2.insert( { 50, 53, 56, 59, 62, 65 } );	
-	//
-	//list.merge(list2);
-	//
-	//cout << "Merge #6(source after destination): \n" << list << endl;
-	//cout << "List size after merge: " << list.size() << endl;
-	//cout << endl << endl;
-	//
-	//list.clear();
-	//list2.clear();
+	list.insert( { 10, 17, 21, 28 } );
+	
+	list2.insert( { 50, 53, 56, 59, 62, 65 } );	
+	
+	list.merge(list2);
+	
+	cout << "Merge #6 (source after destination): \n" << list << endl;
+	cout << "List size after merge: " << list.size() << endl;
+	cout << endl << endl;
+	
+	list.clear();
+	list2.clear();
 	
 	//------------------------
 
@@ -115,7 +115,7 @@ int main()
 	//
 	//list.merge( list2 );
 	//
-	//cout << "Merge #7(source overlaps destination):\n" << list << endl;
+	//cout << "Merge #7 (source overlaps destination):\n" << list << endl;
 	//cout << "List size after merge: " << list.size() << endl;
 	//cout << endl << endl;
 	//
@@ -130,7 +130,7 @@ int main()
 	//
 	//list.merge( list2 );
 	//
-	//cout << "Merge #8(source within destination):\n" << list << endl;
+	//cout << "Merge #8 (source within destination):\n" << list << endl;
 	//cout << "List size after merge: " << list.size() << endl;
 	//cout << endl << endl;
 	//
@@ -169,6 +169,11 @@ List size after merge: 9
 Merge #5 (source before destination):
 0  3  6  9  12  15  18  40  47  54  61  68
 List size after merge: 5
+
+
+Merge #6 (source after destination):
+10  17  21  28  50  53  56  59  62  65
+List size after merge: 4
 
 
 Press any key to continue . . .
