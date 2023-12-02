@@ -5,7 +5,8 @@ Name:           Taylor Bisset
 Section:        A
 Program Name:   CS132-OP1-MergeForLinkedList
 
-Description:    
+Description:    This program implements and tests a merge function for a sorted linked list. 
+				It merge two sorted lists, is as few moves as possible. 
 
 Repo:           https://github.com/TaylorBisset/CS132-OP1-MergeForLinkedList
 
