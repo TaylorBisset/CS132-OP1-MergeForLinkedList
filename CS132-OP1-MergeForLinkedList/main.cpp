@@ -62,19 +62,18 @@ int main()
 	list2.clear();
 	
 	//------------------------
-
-	//
-	//list.insert( { 0, 5, 10, 15, 20, 25, 30, 35, 40} );
-	//
-	//
-	//list.merge(list2);
-	//
-	//cout << "Merge #4 (from an empty list): \n" << list << endl;
-	//cout << "List size after merge: " << list.size() << endl;
-	//cout << endl << endl;
-	//
-	//list.clear();
-	//list2.clear();
+	
+	list.insert( { 0, 5, 10, 15, 20, 25, 30, 35, 40} );
+	
+	
+	list.merge(list2);
+	
+	cout << "Merge #4 (from an empty list): \n" << list << endl;
+	cout << "List size after merge: " << list.size() << endl;
+	cout << endl << endl;
+	
+	list.clear();
+	list2.clear();
 	
 	//------------------------
 
@@ -160,6 +159,11 @@ List size after merge: 0
 Merge #3 (into an empty list):
 0  10  20  30  40
 List size after merge: 0
+
+
+Merge #4 (from an empty list):
+0  5  10  15  20  25  30  35  40
+List size after merge: 9
 
 
 Press any key to continue . . .
